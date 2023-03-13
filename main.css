@@ -1,0 +1,208 @@
+/* body {
+    font-family: sans-serif;
+}
+
+#assignment-instructions {
+    font-family: 'sans-serif';
+    color: blueviolet
+}
+
+code {
+    color: red;
+    font-family: 'Roboto Mono', monospace;
+}
+
+h1 {
+    font-size: larger;
+}
+
+ol :nth-child(2) code {
+    color: green;
+}
+
+ol>li {
+    background-color: black;
+    color: white;
+} */
+/* pseudo classes - : lets us control state of element,   */
+/* pseudo elements - :: lets us control parts of element,   */
+/*  ************************* */
+/* *{
+    box-sizing: border-box;
+} */
+/* html{
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+.div1{
+    margin: 50px;
+    padding: 80px;
+    background: red;
+    height: 30px;
+    width: 50%;
+
+} 
+.div2{
+    margin: 50px;
+    padding: 80px;
+    background: red;
+    width: calc(100%-451px);
+    display: inline-block;
+}
+.div2:hover{
+    background: white;
+    color: red;
+} */
+/* ********************* Module 1*/
+
+/*  *************************** sections *********************** */
+#product-overview{
+    background: url('./images/dummy.jpeg');
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: 100% 100%;  */
+    background-position: center; 
+    /* background position , how much content of the image you want to drop from left and top */
+    height: 528px;
+    padding: 10px;
+    margin-top: 16px;
+    position: relative;
+}
+#product-overview h1{
+    color: white;
+    font-family: 'Anton',sans-serif;
+    position: absolute;
+    /* left: 40px; */
+    left: 10%;
+    bottom: 180px;
+    z-index: 1;
+}
+/* p::first-letter{
+    color: red;
+} */
+.section-title{
+    color: #2ddf5c;
+    text-align: center;
+}
+.plan-list{
+    /* width: 80%; */
+    margin: auto;
+    text-align: center;
+}
+.plan{
+    background: #d5ffdc;
+    text-align: center;
+    padding: 16px;
+    margin: 8px;
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+}
+.plan--highlighted{
+    background: #19b84c;
+    color: white;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
+}
+.plan__annotation{
+    background: white;
+    color: #19b84c;
+    padding: 8px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5) ;
+    border-radius: 4px;
+}
+.plan-title{
+    color: #0e4f1f;
+}
+.plan__price{
+  color: #858585;
+}
+.plan--highlighted .plan__price{
+    color: #0e4f1f;
+}
+.plan--highlighted .plan-title{
+    color: white;
+}
+.plan__features{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.plan__features li{
+   padding: 8px 0;
+}
+#key-features{
+    background: #ff1b68;
+    margin-top: 80px;
+    padding: 16px;
+}
+#key-features .section-title{
+    color: white;
+    margin: 32px;
+}
+.key-feature__list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center ;
+   
+}
+.key-feature{
+    display: inline-block;
+    width: 30%; 
+    vertical-align: top;
+    /* width is 30% and not 33% becaause white space will also occupy width */
+}
+.key-feture__description{
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+.key-feature__image{
+    background: #ffcede;
+    width: 128px;
+    height: 128px;
+    border: 2px solid #424242;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+
+
+
+/* *******  MODULE @2 */
+/* body{
+    font-family: 'sans-serif';
+}
+nav{
+    margin-bottom: 16px;
+    background: #fa923f;
+    padding: 8px 0;
+}
+a{
+    text-transform: none;
+    color: white;
+    margin: 10px;
+}
+a.active{
+    color: #521751;
+}
+a:not(.active){
+  color: aqua;
+} */
+/* a :not() -> will select the which are nested in anchor tags*/
+/* anchor tag which does not have the active class */
+/* use not which caution */
+/* .main-section{
+    height: 800px;
+    border: 1px solid blue !important;
+    padding: 16px;
+} */
+/* don't use !important unless for an edge case */
+/* .highlighted{
+    border: 1px solid #fa923f ;
+    height: 200px;
+} */

@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+} 
+body{
+    font-family: 'Monserrat',sans-serif;
+    margin: 0;
+}
+/* html {
+    margin: 12px;
+} */
+/*  ************** MAIN HEADER *********** */
+.main-header{
+    width: 100%;
+    position: fixed;
+    background-color: #2ddf5c;
+    padding: 8px 16px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    /* top left 0 to avoid default margin of html page  */
+}
+
+ .main-header > div{
+    display: inline-block;
+    vertical-align: middle;
+    /* doesnot take full available width only the width which content needs. */
+ }
+.main-header_brand {
+    text-decoration: none;
+    color: #0e4f1f;
+    font-weight: bold;
+    font-size: 22px;
+}
+.main-nav{
+    display: inline-block;
+    text-align: right;
+    width: calc(100% - 74px);
+    vertical-align: middle;
+    /*  so that nav move to left subtract header logo width, but, the the nav itens will come to new line, to fix it subtract more width ( if you remove wite space between html elements , that will fix it too ,bcoz browser take the empty spaace as characterr) */
+} 
+.main-nav-items{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/* cant giv margin to inline */
+.main-nav-item{
+    display: inline-block;
+    /* text-decoration: none; */
+    margin: 0 16px;
+    padding: 0;
+}
+
+.main-nav-item a{
+    text-decoration: none;
+   color: #0e4f1f;;
+   font-weight: bold;
+   padding: 3px;
+}
+.main-nav-item a:hover,.main-nav-item > a:active {
+    color: white;
+    border-bottom: 5px solid white;
+}
+.main-nav__item-cta a{
+  color: white;
+  background: #ff1b68;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+.main-nav__item-cta a:hover,.main-nav__item-cta a:active{
+   color: #ff1b68;
+   background: white;
+   border: none;
+}
+.main-nav-item a::after{
+    content: 'link';
+    color: red;
+}
+/* ************ main_footer ************* */
+.main-footer{
+    background: black;
+    padding: 32px;
+    margin-top: 48px;
+    text-align: center;
+}
+.man-footer__links{
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+.man-footer__link{
+    display: inline-block;
+    margin: 0 16px;
+}
+.man-footer__link a{
+   color: white;
+   text-decoration: none;
+}
+.man-footer__link a:hover,.man-footer__link a:active{
+  color: #ccc;
+}
+
+/* *************BUTTON **************** */
+.button{
+    background: #0e4f1f;
+    color: #fff;
+    font: inherit;
+    border: 1.5px solid #0e4f1f;
+    padding: 8px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.button:hover,.button:active{
+   color: #0e4f1f;
+   background: #fff;
+}
+.button:focus{
+    outline: none;
+}
