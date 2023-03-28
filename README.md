@@ -5,3 +5,20 @@
 <!-- sticky normally behaves as rerlatiive , but with distance applied it acts as sticky, once margin of viewport is it , and continue to act like the same until the content of parent finishes -->
 
 <!-- for z-index the order is the document flow  order of siblings -->
+<!-- backdrops ccan be created with position fixed but there is better approach() -->
+
+<!-- VW VH VMIN( takes the values percent of width/height) -->
+<!-- PROPERTY                       RECOMMENDED  -->
+<!-- FONT SIZE(root element)       %  -->
+<!-- FONT SIZE                     rem (em - children only)   -->
+<!-- PADDING MARGIN BORDER          rem   px  rem    -->
+<!-- WWIDTH HEIGHT                  % VW     % VH -->
+<!--  TOP   BOTTOM                   %     %-->
+<!--  LEFT RIGHT                     %     % -->
+<!-- v max ,vmin image dont get too big/small  -->
+
+<!-- TO QUICKLY CENTER ELEMRNTS      use auto ( margin auto only works with block level elements with expplicitly assigned width though.)-->
+
+<!-- ********TO DO ********* -->
+<!--  revise positioning and containing block -->
+<!-- 100% height issue -->

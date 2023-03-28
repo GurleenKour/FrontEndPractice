@@ -4,6 +4,19 @@
 body{
     font-family: 'Monserrat',sans-serif;
     margin: 0;
+    /* height: 100%; */
+}
+.backdrop{
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    /* width: 100%; */
+    width: 100vw;
+    /* height: 100%; */
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
 }
 /* html {
     margin: 12px;
@@ -13,7 +26,8 @@ body{
     width: 100%;
     position: fixed;
     background-color: #2ddf5c;
-    padding: 8px 16px;
+    /* padding: 8px 16px; */
+    padding: 0.5rem 1rem;
     top: 0;
     left: 0;
     z-index: 1;
@@ -29,7 +43,17 @@ body{
     text-decoration: none;
     color: #0e4f1f;
     font-weight: bold;
-    font-size: 22px;
+    /* font-size: 22px; */
+    font-size: 1.5rem;
+
+    width: 22px;
+    /* height: 22px; */
+    height: 1.5rem;
+    display: inline-block;
+}
+.main-header_brand img{
+    width: 100%;
+
 }
 .main-nav{
     display: inline-block;
@@ -47,7 +71,8 @@ body{
 .main-nav-item{
     display: inline-block;
     /* text-decoration: none; */
-    margin: 0 16px;
+    /* margin: 0 16px; */
+    margin: 0 1rem;
     padding: 0;
 }
 
@@ -55,7 +80,8 @@ body{
     text-decoration: none;
    color: #0e4f1f;;
    font-weight: bold;
-   padding: 3px;
+   /* padding: 3px; */
+   padding: 0.2rem 0;
 }
 .main-nav-item a:hover,.main-nav-item > a:active {
     color: white;
@@ -64,7 +90,8 @@ body{
 .main-nav__item-cta a{
   color: white;
   background: #ff1b68;
-  padding: 8px 16px;
+  /* padding: 8px 16px; */
+  padding: 0.5rem 1rem;
   border-radius: 8px;
 }
 .main-nav__item-cta a:hover,.main-nav__item-cta a:active{
@@ -79,8 +106,10 @@ body{
 /* ************ main_footer ************* */
 .main-footer{
     background: black;
-    padding: 32px;
-    margin-top: 48px;
+    /* padding: 32px; */
+    padding: 2rem;
+    /* margin-top: 48px; */
+    margin-top: 3rem;
     text-align: center;
 }
 .man-footer__links{
@@ -90,7 +119,8 @@ body{
 }
 .man-footer__link{
     display: inline-block;
-    margin: 0 16px;
+    /* margin: 0 16px; */
+    margin: 0 1rem;
 }
 .man-footer__link a{
    color: white;
@@ -104,9 +134,10 @@ body{
 .button{
     background: #0e4f1f;
     color: #fff;
-    font: inherit;
+    font: inherit; 
     border: 1.5px solid #0e4f1f;
-    padding: 8px;
+    /* padding: 8px; */
+    padding: 0.5rem;
     border-radius: 8px;
     font-weight: bold;
     cursor: pointer;

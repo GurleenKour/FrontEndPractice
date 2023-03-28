@@ -59,17 +59,40 @@ body{
 
 /*  *************************** sections *********************** */
 #product-overview{
-    background: url('./images/dummy.jpeg');
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* background-position: 100% 100%;  */
-    background-position: center; 
+    background: linear-gradient(to top, rgba(103, 74, 92, 0.6) 10%,transparent), url('./images/dummy.jpeg')  50% 50%/cover no-repeat border-box border-box,#ff1b68;
+    width: 100vw;
+    /* background: linear-gradient(to top right ,yellow ,red 40%, blue 60%); */
+    /* background: radial-gradient(circle at top left,red, blue,green); */
+    /* background: radial-gradient(ellipse closest-side at 50% 20%,red 30%, blue,green); */
+
+    /* background-size: cover;
+
+    background-repeat: no-repeat; */
+    /* background-position: 100% 100%; ** */
+    /* background-position: center; 
+    background-origin: border-box; 
+    background-clip: 'border-box'; */
+    /* border-box -> what the container is for background image -> border-box \ content-box */
+    /* background-position: left 10% top 20%; ***/
     /* background position , how much content of the image you want to drop from left and top */
-    height: 528px;
-    padding: 10px;
-    margin-top: 16px;
-    position: relative;
+    /* border:5px dashed red; **/
+    /* height: 528px; < --  set  it to vh for resposiveness vertically*/ 
+    height: 33vh;
+    /* padding: 10px; */
+    /* margin-top: 16px; */
+    margin-top: 2.75rem;
+    position: relative; 
+    /* with relative we are not refering to the viewport but by setting width and height to vh/vw we are changing this behavior */
+    /* on Windows, vw: 100  is  equal to 100% of the viewport width + the scrollbars.*/
+    /* In case you don't want to display these scrollbars, you can use one of these solutions:
+    -- Use width: 100%  instead of vw: 100
+    -- Add overflow-x: hidden;  to the body selector in the shared.css file to hide the horizontal scrollbar (or overflow-y: hidden  to hide the vertical scrollbar)
+    -- Alternatively you could also use the ::-webkit-scrollbar pseudo element. Simply add the following code to the shared.css file:
+
+body: :-webkit-scrollbar {
+    width: 0
+}
+    */
 }
 #product-overview h1{
     color: white;
@@ -95,8 +118,10 @@ body{
 .plan{
     background: #d5ffdc;
     text-align: center;
-    padding: 16px;
-    margin: 8px;
+    /* padding: 16px; */
+    padding: 1rem;
+    /* margin: 8px; */
+    margin: 0.5rem;
     display: inline-block;
     width: 30%;
     vertical-align: middle;
@@ -109,7 +134,8 @@ body{
 .plan__annotation{
     background: white;
     color: #19b84c;
-    padding: 8px;
+    /* padding: 8px; */
+    padding: 0.5rem;
     box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5) ;
     border-radius: 4px;
 }
@@ -131,16 +157,20 @@ body{
     margin: 0;
 }
 .plan__features li{
-   padding: 8px 0;
+   /* padding: 8px 0; */
+   padding: 0.5rem 0;
 }
 #key-features{
     background: #ff1b68;
-    margin-top: 80px;
-    padding: 16px;
+    /* margin-top: 80px; */
+    margin-top: 5rem;
+    /* padding: 16px; */
+    padding: 1rem;
 }
 #key-features .section-title{
     color: white;
-    margin: 32px;
+    /* margin: 32px; */
+    margin: 2rem;
 }
 .key-feature__list{
     list-style: none;
@@ -159,7 +189,8 @@ body{
     text-align: center;
     font-weight: bold;
     color: white;
-    font-size: 20px;
+    /* font-size: 20px; */
+    font-size: 1.2rem;
 }
 .key-feature__image{
     background: #ffcede;
@@ -168,6 +199,8 @@ body{
     border: 2px solid #424242;
     border-radius: 50%;
     margin: 0 auto;
+    /* padding: 20px; */
+    padding: 1.5rem;
 }
 
 
