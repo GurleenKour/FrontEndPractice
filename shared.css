@@ -50,15 +50,36 @@ body{
     /* height: 22px; */
     height: 1.5rem;
     display: inline-block;
+    vertical-align: middle;
 }
 .main-header_brand img{
     width: 100%;
 
 }
+.toggle-button{
+    width: 3rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding-top: 0;
+    padding-bottom: 0;
+    vertical-align: middle;
+    
+}
+.toggle-button:focus{
+    outline: none;
+}
+.toggle-button__bar{
+      width: 100%;
+    height: 0.2rem; 
+    background: black;
+    display: block;
+    margin: 0.6rem 0; 
+}
 .main-nav{
     display: inline-block;
     text-align: right;
-    width: calc(100% - 74px);
+    width: calc(100% - 122px);
     vertical-align: middle;
     /*  so that nav move to left subtract header logo width, but, the the nav itens will come to new line, to fix it subtract more width ( if you remove wite space between html elements , that will fix it too ,bcoz browser take the empty spaace as characterr) */
 } 
@@ -76,7 +97,7 @@ body{
     padding: 0;
 }
 
-.main-nav-item a{
+.main-nav-item a, .mobile-nav__item a{
     text-decoration: none;
    color: #0e4f1f;;
    font-weight: bold;
@@ -87,14 +108,14 @@ body{
     color: white;
     border-bottom: 5px solid white;
 }
-.main-nav__item-cta a{
+.main-nav__item-cta a,.mobile-nav__item--cta a{
   color: white;
   background: #ff1b68;
   /* padding: 8px 16px; */
   padding: 0.5rem 1rem;
   border-radius: 8px;
 }
-.main-nav__item-cta a:hover,.main-nav__item-cta a:active{
+.main-nav__item-cta a:hover,.main-nav__item-cta a:active,.mobile-nav__item--cta a:hover,.mobile-nav__item--cta a:active{
    color: #ff1b68;
    background: white;
    border: none;
@@ -129,6 +150,30 @@ body{
 .man-footer__link a:hover,.man-footer__link a:active{
   color: #ccc;
 }
+.mobile-nav{
+    display: none;
+    position: fixed;
+    z-index: 200;
+    background: white;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100vh;
+}
+.mobile-nav__items{
+    height: 100%;
+    width: 90%;
+    list-style: none;
+    margin: 10% auto;
+    padding: 0;
+    text-align: center;
+}
+.mobile-nav__item{
+    margin: 1rem 0;
+}
+.mobile-nav__item a{
+    font-size: 1.5rem;
+}
 
 /* *************BUTTON **************** */
 .button{
@@ -148,4 +193,7 @@ body{
 }
 .button:focus{
     outline: none;
+}
+.open{
+    display: block !important;
 }
