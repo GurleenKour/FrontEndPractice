@@ -22,3 +22,12 @@
 <!-- ********TO DO ********* -->
 <!--  revise positioning and containing block -->
 <!-- 100% height issue -->
+
+
+
+
+<!-- IN RESPONSIVE DESIGN -->
+<!-- 1) hardware and software pixels -> 
+2) the viewport <meta> tag in HTML
+3) media queries  : breakpoints 250 (40rem), 640 | code outside of media queries should be mobile first| 300-768 | 1000 -for really big screrns
+-->

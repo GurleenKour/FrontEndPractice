@@ -46,9 +46,9 @@ body{
     /* font-size: 22px; */
     font-size: 1.5rem;
 
-    width: 22px;
+    width: 1.8rem;
     /* height: 22px; */
-    height: 1.5rem;
+    height: 1.8rem;
     display: inline-block;
     vertical-align: middle;
 }
@@ -64,7 +64,6 @@ body{
     padding-top: 0;
     padding-bottom: 0;
     vertical-align: middle;
-    
 }
 .toggle-button:focus{
     outline: none;
@@ -75,6 +74,20 @@ body{
     background: black;
     display: block;
     margin: 0.6rem 0; 
+}
+@media (min-width: 40rem) {
+    .main-header_brand {
+        /* font-size: 22px; */
+        font-size: 1.5rem;
+    
+        width: 1.8rem;
+        /* height: 22px; */
+        height: 1.8rem;
+
+    }
+    .toggle-button{
+       display: none;
+    }
 }
 .main-nav{
     display: inline-block;
@@ -87,6 +100,11 @@ body{
     margin: 0;
     padding: 0;
     list-style: none;
+}
+@media (max-width: 40rem) {
+    .main-nav-items{
+       display: none;
+    }
 }
 /* cant giv margin to inline */
 .main-nav-item{
@@ -139,10 +157,11 @@ body{
    padding: 0;
 }
 .man-footer__link{
-    display: inline-block;
+    display: block;
     /* margin: 0 16px; */
-    margin: 0 1rem;
+    margin: 1rem 0;
 }
+
 .man-footer__link a{
    color: white;
    text-decoration: none;
@@ -150,6 +169,14 @@ body{
 .man-footer__link a:hover,.man-footer__link a:active{
   color: #ccc;
 }
+@media (min-width: 40rem){
+    .man-footer__link{
+        display: inline-block;
+        /* margin: 0 16px; */
+        margin: 0 1rem ;
+    }
+}
+/* mobile nav  */
 .mobile-nav{
     display: none;
     position: fixed;
